@@ -40,13 +40,13 @@ class _OrdersScreen extends State<OrdersScreen> {
       body: SafeArea(
         child: Container(
           width: double.infinity,
-          height: double.infinity,
+          // height: double.infinity,
           padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
           child: Column(children: [
             Flexible(
               flex: 1,
               child: Container(
-                  margin: const EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 8),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10)),
@@ -164,7 +164,7 @@ class _OrdersScreen extends State<OrdersScreen> {
             Flexible(
               flex: 1,
               child: Container(
-                  margin: const EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 8),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10)),
@@ -281,7 +281,7 @@ class _OrdersScreen extends State<OrdersScreen> {
             ),Flexible(
               flex: 1,
               child: Container(
-                  margin: const EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 8),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10)),
