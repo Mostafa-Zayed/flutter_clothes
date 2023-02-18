@@ -56,7 +56,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 20, horizontal: 10),
+                            vertical: 15, horizontal: 10),
                         child: Row(children: [
                           Expanded(
                               child: Column(
@@ -174,7 +174,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 20, horizontal: 10),
+                            vertical: 15, horizontal: 10),
                         child: Row(children: [
                           Expanded(
                               child: Column(
@@ -291,7 +291,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 20, horizontal: 10),
+                            vertical: 15, horizontal: 10),
                         child: Row(children: [
                           Expanded(
                               child: Column(
