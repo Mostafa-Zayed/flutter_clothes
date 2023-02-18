@@ -42,61 +42,121 @@ class _OrdersScreen extends State<OrdersScreen> {
           width: double.infinity,
           height: double.infinity,
           padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
-          // color: Colors.red,
           child: Column(children: [
             Flexible(
               flex: 1,
               child: Container(
-                  margin: const EdgeInsets.symmetric(vertical: 10),
-                  // alignment: Alignment.center,
+                  margin: const EdgeInsets.only(bottom: 10),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10)),
                   height: double.infinity,
                   width: double.infinity,
-                  // color: Colors.white,
                   child: Column(
                     children: [
                       Container(
-                        color: Colors.blue,
-                        child: Row(
-                          
-                          children: [
-                            Expanded(
-                            
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20, horizontal: 10),
+                        child: Row(children: [
+                          Expanded(
                               child: Column(
-                                
-                              children:  [
-
-                                Container(
-                                  color: Colors.red,
-                                  padding: const EdgeInsets.only(left: 10),
-                                  margin: const EdgeInsets.only(bottom: 10),
-                                  child: Row(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(bottom: 10),
+                                child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: const [
-                                    Text('Date:',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-                                    SizedBox(width: 10),
-                                    Text('21.38 - 2023.1.18',style: TextStyle(fontSize: 14,color: Colors.red,fontWeight: FontWeight.bold),)
-                                  ]),
-                                ),
-                              
-                                Container(
-                                  width:double.infinity,
-                                  color: Colors.green,
-                                  child: const Text('Number of Parts :  55',style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),)),
-                                const Text('Status:'),
-                                const SizedBox(width: 10),
+                                      Text(
+                                        'Date:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Text(
+                                        '21.38 - 2023.1.18',
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.red,
+                                            fontWeight: FontWeight.bold),
+                                      )
+                                    ]),
+                              ),
+                              Container(
+                                  margin: const EdgeInsets.only(bottom: 10),
+                                  width: double.infinity,
+                                  child: const Text(
+                                    'Number of Parts :  55',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                              Container(
+                                child: Row(children: const [
+                                  Text(
+                                    'Status:',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    'Success',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green),
+                                  )
+                                ]),
+                              )
                             ],
                           )),
                           Expanded(
                             child: Image.network(
                                 'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
                                 width: 80,
-                                height: 100,
+                                height: 110,
                                 fit: BoxFit.cover),
                           )
                         ]),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(right: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: const Color(0xFF8ec9a9)),
+                                onPressed: () {
+                                  print('Details preseed');
+                                },
+                                child: const Text(
+                                  'Details',
+                                  style: TextStyle(fontSize: 18),
+                                ),
+                              ),
+                            )),
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(left: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.white),
+                                onPressed: () {
+                                  print('cancel preseed');
+                                },
+                                child: const Text(
+                                  'Cancel',
+                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
+                                  
+                                ),
+                              ),
+                            ))
+                          ],
+                        ),
                       )
                     ],
                   )),
@@ -104,49 +164,238 @@ class _OrdersScreen extends State<OrdersScreen> {
             Flexible(
               flex: 1,
               child: Container(
-                  margin: const EdgeInsets.symmetric(vertical: 10),
-                  alignment: Alignment.center,
+                  margin: const EdgeInsets.only(bottom: 10),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey, width: 1),
                       borderRadius: BorderRadius.circular(10)),
                   height: double.infinity,
                   width: double.infinity,
-                  // color: Colors.white,
                   child: Column(
                     children: [
                       Container(
-                        child: Row(
-                          children: [
-                            Expanded(child: Text('Date: 8 / 6/ 2023')),
-                            Expanded(
-                                child: Image.network(
-                                    'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
-                                    width: 100,
-                                    height: 100,
-                                    fit: BoxFit.cover))
-                          ],
-                        ),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20, horizontal: 10),
+                        child: Row(children: [
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(bottom: 10),
+                                child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        'Date:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Text(
+                                        '21.38 - 2023.1.18',
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.red,
+                                            fontWeight: FontWeight.bold),
+                                      )
+                                    ]),
+                              ),
+                              Container(
+                                  margin: const EdgeInsets.only(bottom: 10),
+                                  width: double.infinity,
+                                  child: const Text(
+                                    'Number of Parts :  55',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                              Container(
+                                child: Row(children: const [
+                                  Text(
+                                    'Status:',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    'Success',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green),
+                                  )
+                                ]),
+                              )
+                            ],
+                          )),
+                          Expanded(
+                            child: Image.network(
+                                'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
+                                width: 80,
+                                height: 110,
+                                fit: BoxFit.cover),
+                          )
+                        ]),
                       ),
                       Container(
-                        child: Row(),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(right: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: const Color(0xFF8ec9a9)),
+                                onPressed: () {
+                                  print('Details preseed');
+                                },
+                                child: const Text(
+                                  'Details',
+                                  style: TextStyle(fontSize: 18),
+                                ),
+                              ),
+                            )),
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(left: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.white),
+                                onPressed: () {
+                                  print('cancel preseed');
+                                },
+                                child: const Text(
+                                  'Cancel',
+                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
+                                  
+                                ),
+                              ),
+                            ))
+                          ],
+                        ),
+                      )
+                    ],
+                  )),
+            ),Flexible(
+              flex: 1,
+              child: Container(
+                  margin: const EdgeInsets.only(bottom: 10),
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey, width: 1),
+                      borderRadius: BorderRadius.circular(10)),
+                  height: double.infinity,
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 20, horizontal: 10),
+                        child: Row(children: [
+                          Expanded(
+                              child: Column(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(bottom: 10),
+                                child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: const [
+                                      Text(
+                                        'Date:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18),
+                                      ),
+                                      SizedBox(width: 10),
+                                      Text(
+                                        '21.38 - 2023.1.18',
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.red,
+                                            fontWeight: FontWeight.bold),
+                                      )
+                                    ]),
+                              ),
+                              Container(
+                                  margin: const EdgeInsets.only(bottom: 10),
+                                  width: double.infinity,
+                                  child: const Text(
+                                    'Number of Parts :  55',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                              Container(
+                                child: Row(children: const [
+                                  Text(
+                                    'Status:',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    'Success',
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green),
+                                  )
+                                ]),
+                              )
+                            ],
+                          )),
+                          Expanded(
+                            child: Image.network(
+                                'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
+                                width: 80,
+                                height: 110,
+                                fit: BoxFit.cover),
+                          )
+                        ]),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(right: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: const Color(0xFF8ec9a9)),
+                                onPressed: () {
+                                  print('Details preseed');
+                                },
+                                child: const Text(
+                                  'Details',
+                                  style: TextStyle(fontSize: 18),
+                                ),
+                              ),
+                            )),
+                            Expanded(
+                                child: Container(
+                              margin: const EdgeInsets.only(left: 5),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.white),
+                                onPressed: () {
+                                  print('cancel preseed');
+                                },
+                                child: const Text(
+                                  'Cancel',
+                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
+                                  
+                                ),
+                              ),
+                            ))
+                          ],
+                        ),
                       )
                     ],
                   )),
             ),
-            Flexible(
-              flex: 1,
-              child: Container(
-                margin: const EdgeInsets.symmetric(vertical: 10),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.grey, width: 1),
-                    borderRadius: BorderRadius.circular(10)),
-                height: double.infinity,
-                width: double.infinity,
-                // color: Colors.white,
-                child: Column(children: []),
-              ),
-            )
           ]),
         ),
       ),
