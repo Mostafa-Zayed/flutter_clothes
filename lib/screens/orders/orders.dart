@@ -70,7 +70,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                         'Date:',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 18),
+                                            fontSize: 16),
                                       ),
                                       SizedBox(width: 10),
                                       Text(
@@ -88,7 +88,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                   child: const Text(
                                     'Number of Parts :  55',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   )),
                               Container(
@@ -135,7 +135,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Details',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 16),
                                 ),
                               ),
                             )),
@@ -150,7 +150,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Cancel',
-                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
+                                  style: TextStyle(fontSize: 16,color: Color.fromARGB(255, 173, 173, 173)),
                                   
                                 ),
                               ),
@@ -188,7 +188,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                         'Date:',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 18),
+                                            fontSize: 16),
                                       ),
                                       SizedBox(width: 10),
                                       Text(
@@ -206,7 +206,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                   child: const Text(
                                     'Number of Parts :  55',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   )),
                               Container(
@@ -214,7 +214,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                   Text(
                                     'Status:',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   SizedBox(width: 10),
@@ -233,7 +233,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                             child: Image.network(
                                 'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
                                 width: 80,
-                                height: 110,
+                                height: 100,
                                 fit: BoxFit.cover),
                           )
                         ]),
@@ -253,7 +253,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Details',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 16),
                                 ),
                               ),
                             )),
@@ -305,7 +305,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                         'Date:',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: 18),
+                                            fontSize: 16),
                                       ),
                                       SizedBox(width: 10),
                                       Text(
@@ -323,7 +323,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                   child: const Text(
                                     'Number of Parts :  55',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   )),
                               Container(
@@ -331,14 +331,14 @@ class _OrdersScreen extends State<OrdersScreen> {
                                   Text(
                                     'Status:',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   SizedBox(width: 10),
                                   Text(
                                     'Success',
                                     style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                         color: Colors.green),
                                   )
@@ -350,7 +350,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                             child: Image.network(
                                 'https://cdn.shopify.com/s/files/1/0703/7413/products/Screen_Shot_2017-12-22_at_11.52.58_AM_1800x1800.jpg?v=1624457309',
                                 width: 80,
-                                height: 110,
+                                height: 100,
                                 fit: BoxFit.cover),
                           )
                         ]),
@@ -370,7 +370,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Details',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(fontSize: 16),
                                 ),
                               ),
                             )),
@@ -385,7 +385,7 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Cancel',
-                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
+                                  style: TextStyle(fontSize: 16,color: Color.fromARGB(255, 173, 173, 173)),
                                   
                                 ),
                               ),
