@@ -40,17 +40,17 @@ class _OrdersScreen extends State<OrdersScreen> {
       body: SafeArea(
         child: Container(
           width: double.infinity,
-          // height: double.infinity,
-          padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
+          padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
           child: Column(children: [
             Flexible(
               flex: 1,
               child: Container(
                   margin: const EdgeInsets.only(bottom: 8),
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey, width: 1),
-                      borderRadius: BorderRadius.circular(10)),
-                  height: double.infinity,
+                    border: Border.all(color: Colors.grey, width: 2),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  // height: double.infinity,
                   width: double.infinity,
                   child: Column(
                     children: [
@@ -150,8 +150,10 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Cancel',
-                                  style: TextStyle(fontSize: 16,color: Color.fromARGB(255, 173, 173, 173)),
-                                  
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color:
+                                          Color.fromARGB(255, 173, 173, 173)),
                                 ),
                               ),
                             ))
@@ -268,8 +270,10 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Cancel',
-                                  style: TextStyle(fontSize: 18,color: Color.fromARGB(255, 173, 173, 173)),
-                                  
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      color:
+                                          Color.fromARGB(255, 173, 173, 173)),
                                 ),
                               ),
                             ))
@@ -278,7 +282,8 @@ class _OrdersScreen extends State<OrdersScreen> {
                       )
                     ],
                   )),
-            ),Flexible(
+            ),
+            Flexible(
               flex: 1,
               child: Container(
                   margin: const EdgeInsets.only(bottom: 8),
@@ -385,8 +390,10 @@ class _OrdersScreen extends State<OrdersScreen> {
                                 },
                                 child: const Text(
                                   'Cancel',
-                                  style: TextStyle(fontSize: 16,color: Color.fromARGB(255, 173, 173, 173)),
-                                  
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color:
+                                          Color.fromARGB(255, 173, 173, 173)),
                                 ),
                               ),
                             ))
